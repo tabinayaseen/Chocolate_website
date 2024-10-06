@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Web</title>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <section class="main">
+        <div class="navbar h-class">
+            <ul class="items v-class">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="story.html">story</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+            <a href="buy.html">
+                <button class="btn btn1">Buy Now</button>
+              </a>
+              
+        </div>
+        <div class="burger">&#9776</div>
+        <div class="main-heading">
+            <p class="para">chocolate products</p>
+            <h1 class="heading">dark chocolate</h1>
+            <p class="mid-para">We source our cocoa beans from sustainable farms, carefully selecting only the best to ensure that every bite is an unforgettable experience. Over the years, our dedication to quality and craftsmanship has earned us a reputation as a leading artisan chocolate brand, beloved by chocolate enthusiasts worldwide.</p>
+            <a href="about.html">
+                <button class="btn btn1">Details</button>
+              </a>
+        </div>
+    </section>
+
+      <!-- Buy Now Form Section -->
+  <section class="buy-now-section">
+    <div class="form-container">
+      <h1>Buy Your Favorite Chocolate</h1>
+      <form class="buy-now-form">
+        <!-- Chocolate Selection -->
+        <div class="form-group">
+          <label for="chocolate-type">Choose Chocolate:</label>
+          <select id="chocolate-type" required>
+            <option value="">Select a Chocolate</option>
+            <option value="dark">Dark Chocolate</option>
+            <option value="milk">Milk Chocolate</option>
+            <option value="white">White Chocolate</option>
+            <option value="hazelnut">Hazelnut Chocolate</option>
+            <option value="caramel">Caramel Chocolate</option>
+          </select>
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" placeholder="Enter quantity" required>
+        </div>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+          <label for="address">Shipping Address:</label>
+          <textarea id="address" placeholder="Enter your address" rows="3" required></textarea>
+        </div>
+
+        <!-- Buy Now Button -->
+        <button type="submit">Buy Now</button>
+      </form>
+
+
+
+
+    </div>
+
+</section>
+
+    <!-- ______________contact_________ -->
+    <section class="sec contact">
+      <div class="contact-box">
+          <div class="Con-box">
+              <p class="para">contact us</p>
+              <h1 class="heading">contact</h1>
+              <div class="icons">
+                  <div>
+                      <i class="fab fa-facebook"></i>
+                      <span>Tabeena yaseen</span>
+                  </div>
+                  <div>
+                      <i class="fab fa-instagram"></i>
+                      <span>Tabina yaseen</span>
+                  </div>
+                  <div>
+                      <i class="fab fa-whatsapp"></i>
+                      <span>03170234799</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <script src="index.js"></script>
+
+
+</body>
+</html>

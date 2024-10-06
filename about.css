@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gabarito&family=Inclusive+Sans&family=Montserrat&family=Poppins&family=Roboto&family=Space+Grotesk&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    cursor: pointer !important;
+}
+
+p {
+    cursor: pointer !important;
+}
+
+/* Main Section */
+.main {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(4 3 3 / 60%), rgb(0 0 0 / 33%)), url(pic.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+}
+
+.navbar li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.4375rem; /* Responsive font size */
+    padding: 4px;
+}
+
+.navbar li a:hover {
+    color: #C19A6B;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    cursor: pointer;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 39px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9c8c7a;
+    color: black;
+}
+
+/* Main Heading */
+.main-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    height: 60vh;
+}
+
+.para {
+    color: #9c8c7a;
+    letter-spacing: 2px;
+}
+
+.heading {
+    color: #ff6b00;
+    font-size: 4.6875rem; /* 75px in rem */
+    font-family: 'Courgette', cursive;
+}
+
+.mid-para {
+    font-size: 0.6875rem;
+    color: #9c8c7a;
+    padding: 2% 0;
+}
+
+.btn1 {
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+/* Section */
+.sec {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.img {
+    width: 40%;
+}
+
+.row img {
+    width: 80%;
+}
+
+.boxes {
+    width: 35%;
+    align-self: center;
+    text-align: left;
+}
+
+.boxes h1 {
+    color: rgb(57, 36, 36);
+    font-size: 1.875rem; /* 30px */
+}
+
+.sec .heading {
+    color: rgb(92, 44, 10);
+    font-size: 3.125rem; /* 50px */
+}
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+}
+
+/* Image and Text Styling */
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    height: auto; /* Allows image height to adjust automatically */
+}
+
+.about-image img:hover {
+    width: 102%; /* Slight enlargement on hover */
+    border-radius: 13px;
+}
+
+.about-text {
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #7b3f00;
+}
+
+.about-text p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Reverse Row for Alternating Layout */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Contact Section */
+.contact {
+    background: url(pic2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin-top: 10%;
+    position: relative;
+}
+
+.Con-box {
+    background-color: #3d1f0a;
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    height: 300px;
+    top: -25%;
+    left: 25%;
+    padding: 35px 0;
+}
+
+.Con-box .heading {
+    color: white;
+}
+
+.Con-box .icons {
+    color: #9c8c7a;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons div {
+    padding: 0 13px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.icons i {
+    display: block;
+    padding: 12px 0;
+    font-size: 1.625rem; /* 26px */
+}
+
+.icons div:hover {
+    color: white;
+}
+
+/* Media Queries */
+
+/* Tablets and Medium Devices */
+@media (max-width: 768px) {
+    .navbar li a {
+        font-size: 1.2rem; /* Adjusted font size for tablets */
+    }
+
+    .main-heading {
+        width: 60%;
+    }
+
+    .heading {
+        font-size: 3.75rem; /* Scaled down heading for tablets */
+    }
+
+    .sec {
+        width: 90%;
+    }
+
+    .boxes h1 {
+        font-size: 1.5rem; /* Smaller headings */
+    }
+
+    .about-row {
+        flex-direction: column;
+    }
+
+    .about-text {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .Con-box {
+        width: 70%;
+        left: 15%;
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 500px) {
+    .navbar li a {
+        font-size: 1rem; /* Smaller font for mobiles */
+    }
+
+    .main-heading {
+        width: 80%;
+    }
+
+    .heading {
+        font-size: 3rem; /* Further scaling down for mobile */
+    }
+
+    .mid-para {
+        font-size: 0.625rem;
+    }
+
+    .btn {
+        padding: 8px 24px;
+        font-size: 1rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .boxes {
+        width: 90%;
+        text-align: center;
+    }
+
+    .sec .heading {
+        font-size: 2.5rem;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .Con-box {
+        width: 88%;
+        left: 6%;
+    }
+}
